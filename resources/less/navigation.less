@@ -26,7 +26,22 @@ header {
   .logo_svg {
     width: 5rem;
     height: 5rem;
+    cursor: pointer;
+    &:hover {
+      animation: rotate-90-br-cw 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    @keyframes rotate-90-br-cw {
+      0% {
+        transform: rotate(0);
+        transform-origin: 100% 100%;
+      }
+      100% {
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+      }
+    }
   }
+
   .nav {
     ul {
       display: flex;
@@ -88,7 +103,7 @@ header {
           height: 1px;
           background: white;
           position: absolute;
-          transition:0.5s;
+          transition: 0.5s;
         }
         &:before {
           top: 10px;

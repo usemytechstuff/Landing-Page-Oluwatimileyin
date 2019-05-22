@@ -190,6 +190,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+hr {
+  background: #220EF0;
+  width: 90rem;
+  height: 0.3rem;
+}
 header {
   background-image: url(/resources/images/photography-accessories.jpg);
   background-repeat: no-repeat;
@@ -219,6 +224,20 @@ header input {
 header .logo_svg {
   width: 5rem;
   height: 5rem;
+  cursor: pointer;
+}
+header .logo_svg:hover {
+  animation: rotate-90-br-cw 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes rotate-90-br-cw {
+  0% {
+    transform: rotate(0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+  }
 }
 header .nav ul {
   display: flex;
@@ -295,4 +314,30 @@ header .nav .hamburger_icon .hamburger_menu:after {
   header .nav .hamburger_icon .hamburger_menu {
     display: block;
   }
+}
+.product_section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.product_section .product_slide {
+  padding: 2rem 0;
+}
+.product_section .product_slide h1 {
+  font-size: 3rem;
+}
+.product_section .product_slide .box_wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.product_section .product_slide .box_wrapper .box {
+  width: 15rem;
+  height: 15rem;
+  background: #54535f;
+  border-radius: 3px;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: 1rem;
+}
+.product_section .product_slide .box_wrapper .box:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
