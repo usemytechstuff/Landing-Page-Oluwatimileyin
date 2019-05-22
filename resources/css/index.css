@@ -227,39 +227,72 @@ header .nav ul {
 header .nav ul li {
   font-size: 1.5rem;
   padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+header .nav ul li:hover {
+  color: #121312;
+  transform: scale(1.3);
 }
 @media (max-width: 500px) {
   header .nav ul {
     flex-direction: column;
     display: none;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    transition: left 1s ease-in;
   }
 }
-header .nav .hamburger_menu {
+header .nav ul.open_menu {
+  display: block;
+  left: 40vw;
+  top: 80px;
+  text-align: center;
+  background: rgba(100, 98, 98, 0.52);
+}
+header .nav .hamburger_icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+}
+header .nav .hamburger_icon.active-one .hamburger_menu {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+header .nav .hamburger_icon.active-one .hamburger_menu:before {
+  transform: rotate(45deg);
+}
+header .nav .hamburger_icon.active-one .hamburger_menu:after {
+  top: 10px;
+  transform: rotate(135deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+header .nav .hamburger_icon .hamburger_menu {
   width: 1.5rem;
   height: 1px;
   background: white;
   position: relative;
-  cursor: pointer;
   display: none;
 }
-header .nav .hamburger_menu::before {
+header .nav .hamburger_icon .hamburger_menu::after,
+header .nav .hamburger_icon .hamburger_menu::before {
   content: "";
   width: 2rem;
   height: 1px;
   background: white;
   position: absolute;
-  top: 1rem;
+  transition: 0.5s;
 }
-header .nav .hamburger_menu::after {
-  content: "";
-  width: 2rem;
-  height: 1px;
-  background: white;
-  position: absolute;
-  top: 2rem;
+header .nav .hamburger_icon .hamburger_menu:before {
+  top: 10px;
+}
+header .nav .hamburger_icon .hamburger_menu:after {
+  top: 20px;
 }
 @media (max-width: 500px) {
-  header .nav .hamburger_menu {
+  header .nav .hamburger_icon .hamburger_menu {
     display: block;
   }
 }
