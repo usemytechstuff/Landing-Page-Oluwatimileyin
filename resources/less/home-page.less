@@ -5,6 +5,9 @@
     padding: 2rem 0;
     h1 {
       font-size: 3rem;
+      @media @phone {
+        text-align: center;
+      }
     }
     .box_wrapper {
       display: flex;
@@ -15,7 +18,7 @@
         height: 15rem;
         background: #54535f;
         border-radius: 3px;
-        transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+        transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         margin: 1rem;
         &:hover {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -23,5 +26,36 @@
         }
       }
     }
+  }
+}
+.section_join_now {
+  background: url(/resources/images/photo-1482440308425-276ad0f28b19.jpeg)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100rem;
+  height: 40rem;
+
+  &>div{
+    padding: 5rem;
+    @media @phone {
+      padding: 3rem;
+    }
+    h1{
+      font-size: 3.5rem;
+      color: @white;
+      font-weight: 700;
+      line-height: 5rem;
+      @media @phone {
+        font-size: 3rem;
+      }
+    }
+   button{
+     padding: 1rem 2rem;
+     border-radius: .5rem;
+     background: #605F6D;
+     color: @white;
+     font-size: 2rem;
+   }
   }
 }

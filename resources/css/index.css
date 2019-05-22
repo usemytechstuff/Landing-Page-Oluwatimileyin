@@ -192,7 +192,7 @@ p {
 }
 hr {
   background: #220EF0;
-  width: 90rem;
+  max-width: 90rem;
   height: 0.3rem;
 }
 header {
@@ -325,6 +325,11 @@ header .nav .hamburger_icon .hamburger_menu:after {
 .product_section .product_slide h1 {
   font-size: 3rem;
 }
+@media (max-width: 500px) {
+  .product_section .product_slide h1 {
+    text-align: center;
+  }
+}
 .product_section .product_slide .box_wrapper {
   display: flex;
   justify-content: space-around;
@@ -340,4 +345,37 @@ header .nav .hamburger_icon .hamburger_menu:after {
 }
 .product_section .product_slide .box_wrapper .box:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.section_join_now {
+  background: url(/resources/images/photo-1482440308425-276ad0f28b19.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100rem;
+  height: 40rem;
+}
+.section_join_now > div {
+  padding: 5rem;
+}
+@media (max-width: 500px) {
+  .section_join_now > div {
+    padding: 3rem;
+  }
+}
+.section_join_now > div h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 700;
+  line-height: 5rem;
+}
+@media (max-width: 500px) {
+  .section_join_now > div h1 {
+    font-size: 3rem;
+  }
+}
+.section_join_now > div button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background: #605F6D;
+  color: white;
+  font-size: 2rem;
 }
