@@ -356,6 +356,7 @@ header .nav .hamburger_icon .hamburger_menu:after {
   background-size: cover;
   max-width: 100rem;
   height: 40rem;
+  margin-bottom: 2rem;
 }
 .section_join_now > div {
   padding: 5rem;
@@ -382,4 +383,47 @@ header .nav .hamburger_icon .hamburger_menu:after {
   background: #605f6d;
   color: white;
   font-size: 2rem;
+}
+.section_about {
+  margin-top: 2rem;
+}
+.section_about h1 {
+  font-size: 3rem;
+}
+.section_about .section_about-flex-two {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .section_about .section_about-flex-two {
+    flex-direction: column;
+  }
+}
+.section_about .section_about-flex-two div:nth-child(1) {
+  flex: 1;
+}
+.section_about .section_about-flex-two div:nth-child(1) img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.section_about .section_about-flex-two div:nth-child(2) {
+  flex: 1;
+  padding-top: 8rem;
+  padding-left: 4rem;
+}
+.section_about .section_about-flex-two div:nth-child(2) p {
+  font-size: 2rem;
+  color: #54535F;
+}
+@media (max-width: 768px) {
+  .section_about .section_about-flex-two div:nth-child(2) {
+    padding-top: 4rem;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .section_about .section_about-flex-two div:nth-child(2) {
+    padding: 2rem;
+  }
 }

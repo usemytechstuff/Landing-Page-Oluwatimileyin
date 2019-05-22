@@ -39,7 +39,7 @@
   background-size: cover;
   max-width: 100rem;
   height: 40rem;
-
+  margin-bottom: 2rem;
   & > div {
     padding: 5rem;
     @media @phone {
@@ -60,6 +60,43 @@
       background: #605f6d;
       color: @white;
       font-size: 2rem;
+    }
+  }
+}
+.section_about{
+  margin-top: 2rem;
+  h1{
+    font-size: 3rem;
+  }
+  .section_about-flex-two{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media @phone {
+      flex-direction: column;
+    }
+    div:nth-child(1){
+      flex: 1;
+      img{
+        width: 100%;
+        border-radius: .5rem;
+      }
+    }
+    div:nth-child(2){
+     flex: 1;
+     padding-top: 8rem;
+     padding-left: 4rem;
+     p{
+      font-size: 2rem;
+      color: #54535F;
+     }
+     @media @tablet {
+      padding-top: 4rem;
+      padding-left: 2rem;
+     }
+     @media @phone {
+      padding: 2rem;
+     }
     }
   }
 }
