@@ -13,6 +13,10 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      h1{
+        font-size: 1.6rem;
+        text-align: center;
+      }
       .box {
         width: 15rem;
         height: 15rem;
@@ -36,12 +40,12 @@
   max-width: 100rem;
   height: 40rem;
 
-  &>div{
+  & > div {
     padding: 5rem;
     @media @phone {
       padding: 3rem;
     }
-    h1{
+    h1 {
       font-size: 3.5rem;
       color: @white;
       font-weight: 700;
@@ -50,12 +54,12 @@
         font-size: 3rem;
       }
     }
-   button{
-     padding: 1rem 2rem;
-     border-radius: .5rem;
-     background: #605F6D;
-     color: @white;
-     font-size: 2rem;
-   }
+    button {
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      background: #605f6d;
+      color: @white;
+      font-size: 2rem;
+    }
   }
 }

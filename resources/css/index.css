@@ -335,6 +335,10 @@ header .nav .hamburger_icon .hamburger_menu:after {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.product_section .product_slide .box_wrapper h1 {
+  font-size: 1.6rem;
+  text-align: center;
+}
 .product_section .product_slide .box_wrapper .box {
   width: 15rem;
   height: 15rem;
@@ -375,7 +379,7 @@ header .nav .hamburger_icon .hamburger_menu:after {
 .section_join_now > div button {
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  background: #605F6D;
+  background: #605f6d;
   color: white;
   font-size: 2rem;
 }
