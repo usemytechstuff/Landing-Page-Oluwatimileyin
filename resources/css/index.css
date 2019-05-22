@@ -315,6 +315,50 @@ header .nav .hamburger_icon .hamburger_menu:after {
     display: block;
   }
 }
+footer > div:nth-of-type(2) {
+  background: #605F6D;
+  color: white;
+  padding: 2rem;
+  font-weight: 300;
+}
+footer .section-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  footer .section-footer {
+    flex-direction: column;
+  }
+}
+footer .section-footer > div {
+  flex: 1;
+  margin: 0 1rem;
+}
+footer .section-footer > div h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+footer .section-footer > div p {
+  line-height: 3rem;
+  font-weight: 200;
+}
+@media (max-width: 500px) {
+  footer .section-footer > div {
+    margin-bottom: 1rem;
+  }
+}
+footer .section-footer > div:nth-of-type(1) {
+  flex: 2;
+  background: whitesmoke;
+}
+footer .section-footer > div:nth-of-type(1) img {
+  width: 5rem;
+  height: 5rem;
+}
 .product_section {
   margin-top: 2rem;
   margin-bottom: 2rem;
