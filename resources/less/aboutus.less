@@ -1,0 +1,32 @@
+.about-section {
+  &>div:nth-of-type(1){
+    h1 {
+      font-size: 2rem;
+      line-height: 4rem;
+    }
+    h3{
+        font-size: 1.7rem;
+        line-height: 4rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+  }
+  .about-team-profile {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    &>div {
+        width: 20rem;
+        margin: 3rem;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+      p{
+          font-weight: 300;
+          text-align: center;
+      }
+    }
+  }
+}
