@@ -519,7 +519,7 @@ footer .section-footer > div:nth-of-type(1) img {
   position: relative;
 }
 .about-section .about-the-team h1:after {
-  content: '';
+  content: "";
   width: 8rem;
   height: 0.2rem;
   background: #D8D8D8;
