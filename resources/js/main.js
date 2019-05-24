@@ -1,3 +1,7 @@
+window.addEventListener('load', ()=>{
+   TweenMax.fromTo('body', 1, {opacity: 0}, {opacity: 1})
+})
+
 window.onresize = function(event) {
   if (!window.matchMedia("(max-width: 500px)").matches) {
     document.querySelector(".nav_ul").classList.remove("open_menu");
@@ -14,8 +18,8 @@ const data = [
   { name: "Equipment", link: "#" },
   { name: "Help", link: "#" },
   { name: "About Us", link: "about.html" },
-  { name: "Sign Up", link: "#" },
-  { name: "Login", link: "#" }
+  { name: "Sign Up", link: "https://usemytechstuff.netlify.com/register" },
+  { name: "Login", link: "https://usemytechstuff.netlify.com/" }
 ];
 class Navbar {
   constructor(container, data) {
@@ -40,4 +44,4 @@ class Navbar {
 }
 
 const container = document.querySelector(".nav");
-let timi = new Navbar(container, data);
+new Navbar(container, data);
