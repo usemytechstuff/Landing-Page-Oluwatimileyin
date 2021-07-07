@@ -1,0 +1,50 @@
+footer {
+  & > div:nth-of-type(2) {
+    background: #605f6d;
+    color: @white;
+    padding: 2rem;
+    font-weight: 300;
+  }
+  .section-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    @media @phone {
+      flex-direction: column;
+    }
+    & > div {
+      flex: 1;
+      margin: 0 1rem;
+      svg {
+        font-size: 3rem;
+        color: #4634f3;
+        cursor: pointer;
+        &:hover {
+          color: rgba(71, 52, 243, 0.479);
+        }
+      }
+      h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+      p {
+        line-height: 3rem;
+        font-weight: 200;
+      }
+      @media @phone {
+        margin-bottom: 1rem;
+      }
+    }
+    & > div:nth-of-type(1) {
+      flex: 2;
+      background: #9187F8;
+      img {
+        width: 10rem;
+        height: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.product_section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  .product_slide {
+    padding: 2rem 0;
+    h1 {
+      font-size: 3rem;
+      @media @phone {
+        text-align: center;
+      }
+    }
+    .box_wrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      h1 {
+        font-size: 1.6rem;
+        text-align: center;
+      }
+      .box {
+        width: 15rem;
+        height: 15rem;
+        background: #54535f;
+        border-radius: 5px;
+        transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        margin: 1rem;
+        &:hover {
+          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+            0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+          border-radius: 3px;
+        }
+        img {
+          width: 100%;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
+.section_join_now {
+  background: url(/resources/images/photo-1482440308425-276ad0f28b19.jpeg)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100rem;
+  height: 40rem;
+  margin-bottom: 2rem;
+  & > div {
+    padding: 5rem;
+    @media @phone {
+      padding: 3rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+      color: @white;
+      font-weight: 700;
+      line-height: 5rem;
+      @media @phone {
+        font-size: 3rem;
+      }
+    }
+    p {
+      font-size: 2rem;
+      color: @white;
+    }
+    button {
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      background: #605f6d;
+      color: @white;
+      font-size: 2rem;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+.section_about {
+  margin-top: 2rem;
+  h1 {
+    font-size: 3rem;
+  }
+  .section_about-flex-two {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media @phone {
+      flex-direction: column;
+    }
+    div:nth-child(1) {
+      flex: 1;
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+    div:nth-child(2) {
+      flex: 1;
+      padding-top: 8rem;
+      padding-left: 4rem;
+      p {
+        font-size: 2rem;
+        color: #54535f;
+      }
+      @media @tablet {
+        padding-top: 4rem;
+        padding-left: 2rem;
+      }
+      @media @phone {
+        padding: 2rem;
+      }
+    }
+  }
+}
